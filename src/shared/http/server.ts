@@ -1,8 +1,7 @@
 export class Appserver {
-    private app: string;
+  private app: string;
 
-    constructor(info: string){
-        this.app = info ?? 'Ola Dev';
-
-    }
+  constructor(info: string) {
+    this.app = info ?? 'Ola Dev';
+  }
 }
