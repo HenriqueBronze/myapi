@@ -1,4 +1,4 @@
-class Appserver {
+export class Appserver {
     private app: string;
 
     constructor(info: string){
