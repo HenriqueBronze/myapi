@@ -13,4 +13,8 @@ rolesRouter.post('/', (request, response) => {
   return response.status(201).json(role);
 });
 
+rolesRouter.get('/', (request, response) => {
+  return response.json(rolesRepository.findAll());
+});
+
 export { rolesRouter };
