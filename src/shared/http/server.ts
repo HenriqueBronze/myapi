@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import express, { NextFunction, Request, Response } from 'express'
+import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 import cors from 'cors';
 import { routes } from './routes';
@@ -23,9 +23,9 @@ app.use(
     return response.status(500).json({
       status: 'error',
       message: 'Internal server error',
-    })
+    });
   },
-)
+);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server started on port ${process.env.PORT}! 🏆`);
